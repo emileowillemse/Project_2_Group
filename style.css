@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+@font-face {
+    font-family: "bavarian-regular";
+    src: url(./font/bavarian-regular.otf);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-image: url(./images/background.jpg);
+    width: 1440px;
+    height: 1027px;
+}
+
+h1 {
+    font-family: bavarian-regular;
+    align-content: center;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+.hero {
+    padding: 20px;
+    position: center;
+    color: #21605D;
+    width: fit-content;
+    top: 50%;
+    
+}
+
+.banner {
+background-size: cover;
+background-position: center;
+
+}
+
+.logo-home {
+    width: 50px;
+    position: centre;
+    cursor: pointer;
+}
+
+.navbar {
+    z-index: 10000;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: #21605D;
+    background: -moz-linear-gradient(0 0 0 .57);
+    
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 50px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #21605D;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.column {
+    float: right;
+    font-family: 'poppins';
+    font-weight: 500;
+    
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+    align-content: center;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+    
+}
+
+button {
+    width: 100px;
+    padding: 18px 10px;
+    text-align: center;
+    margin: 10px 10px;
+    border-radius: 12px;
+    font-weight:bold;
+    border: #21605D;
+    background-color: #21605D;
+    color: azure;
+    cursor: pointer;
+}
+
+.footer-area {
+    background-color: #21605D;
+}
