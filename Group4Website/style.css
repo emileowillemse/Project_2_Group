@@ -5,21 +5,30 @@
     src: url(./font/bavarian-regular.otf);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     background-image: url(./images/background.jpg);
-    width: 1280px;
-    height: 720px;
+    width: 1440px;
+    background-repeat: no-repeat;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
 
+#content-wrap {
+    padding-bottom: 2.5rem; /*footer height*/
+}
 
 h1 {
     font-family: bavarian-regular;
@@ -43,6 +52,11 @@ h3 {
 background-size: cover;
 background-position: center;
 
+}
+
+.girl {
+    position: center;
+    
 }
 
 .logo-home {
@@ -127,8 +141,63 @@ button {
     cursor: pointer;
 }
 
-.footer-area {
+#footer {
     background-color: #21605D;
+    position:sticky;
+    bottom:0;
+    background-image: url(images/patternfooter.svg);
+    
 }
 
+.footer-logo {
+    height: 200px;
+    margin-left: 20px;
+}
+.contnr {
+    max-width: 1440px;
+    margin: auto;
+    max-height: 300px;
+}
 
+.row {
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col{
+width: 25%;
+padding: 0;
+}
+
+.footer-col h4 {
+font-size: 18px;
+color: aliceblue;
+text-transform: capitalize;
+margin-bottom: 30px;
+font-weight: 500;
+position: relative;
+}
+
+.footer-col h4::before{
+    content:'' ;
+    position: absolute;
+    left: 0;
+    bottom: -10px ;
+
+}
+
+.footer-col ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.social-icon {
+width: 30px;
+height: 30px;
+margin-left: 18px;
+}
