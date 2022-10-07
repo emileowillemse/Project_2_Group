@@ -9,9 +9,17 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     background-image: url(./images/background.jpg);
-    width: 1440px;
-    height: 1027px;
+    width: 1280px;
+    height: 720px;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
 
 h1 {
     font-family: bavarian-regular;
@@ -122,3 +130,5 @@ button {
 .footer-area {
     background-color: #21605D;
 }
+
+
